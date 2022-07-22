@@ -1,0 +1,11 @@
+h1,
+p {
+    font-family: Georgia;
+}
+
+.adr, .nine, .aboutimg_text, .adr_text {
+  font-family: cursive;
+}
+html, * {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
