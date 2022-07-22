@@ -5,7 +5,6 @@ import PText from './PText';
 import SocialIcons from './SocialIcons';
 import { FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa';
 
-
 const FooterStyle = styled.div`
   margin-top: 10rem;
   padding-top: 10rem;
@@ -15,7 +14,10 @@ const FooterStyle = styled.div`
 
   .containers {    display: flex;
 }
-  
+  .heading {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
   .container_wrapper {
     display: flex;
     gap: 3rem;    
@@ -116,16 +118,10 @@ export default function Footer() {
             />
           </div>
           <div className="footer__col3">
-              <FooterCol
-              heading="Social Icons"/>
-
-            <SocialIcons
-              text="Facebook"
-              icon={<FaFacebook />} />
-            <SocialIcons               text="Twitter"               icon={<FaTwitter />} />
-            <SocialIcons
-              text="Facebook"
-              icon={<FaFacebook />} />
+            <h2 className="heading">Social Icons</h2>
+            <SocialIcons text="Facebook" icon={<FaFacebook />} />
+            <SocialIcons text="Twitter" icon={<FaTwitter />} />
+            <SocialIcons text="Telegram" icon={<FaTelegram />} />
           </div>
         </div>
       </div>
@@ -133,7 +129,11 @@ export default function Footer() {
         <div className="containers">
           <PText>
             © 2021 - Adrenaline Nine | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100074182476935">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/profile.php?id=100074182476935"
+            >
               Adrenaline_nine
             </a>{' '}
           </PText>
