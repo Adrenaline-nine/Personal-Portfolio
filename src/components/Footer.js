@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
+import SocialIcons from './SocialIcons';
+import { FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa';
+
 
 const FooterStyle = styled.div`
   margin-top: 10rem;
@@ -113,23 +116,13 @@ export default function Footer() {
             />
           </div>
           <div className="footer__col3">
-            <FooterCol
-              heading="social Links"
-              links={[
-                {
-                  title: 'Facebook',
-                  path: 'https://www.facebook.com/profile.php?id=100074182476935',
-                },
-                {
-                  title: 'Twitter',
-                  path: 'https://twitter.com/Adrenaline_nine?t=TgEas4uagrC_mrC1j60gZg&s=09',
-                },
-                {
-                  title: 'Telegram',
-                  path: 'https://t.me/Adrenaline_Nine',
-                },
-              ]}
-            />
+            <SocialIcons
+              text="Facebook"
+              icon={<FaFacebook />} />
+            <SocialIcons               text="Twitter"               icon={<FaTwitter />} />
+            <SocialIcons
+              text="Facebook"
+              icon={<FaFacebook />} />
           </div>
         </div>
       </div>
