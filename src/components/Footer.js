@@ -14,7 +14,10 @@ const FooterStyle = styled.div`
 
   .containers {    display: flex;
 }
-  .heading {
+  .heading {          
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--crimson);
     font-size: 2.4rem;
     margin-bottom: 2rem;
   }
