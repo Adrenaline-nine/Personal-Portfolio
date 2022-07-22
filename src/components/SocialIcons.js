@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import PText from './PText';
 
 const SocialStyles = styled.div`
-    padding: 2rem;
-      display: flex;
-      
+  padding: 2rem;
+  display: flex;
+
 `;
 
 export default function SocialIcons({

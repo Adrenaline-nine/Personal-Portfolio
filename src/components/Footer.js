@@ -116,6 +116,9 @@ export default function Footer() {
             />
           </div>
           <div className="footer__col3">
+              <FooterCol
+              heading="Social Icons"/>
+
             <SocialIcons
               text="Facebook"
               icon={<FaFacebook />} />
