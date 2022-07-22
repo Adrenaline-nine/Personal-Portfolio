@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
-import { FaFacebook } from 'react-icons/fa';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
@@ -60,7 +59,7 @@ export default function ContactSection() {
         <div className="contactSection__wrapper">
           <div className="left">
             <ContactInfoItem icon={<MdLocalPhone />} text="+8801231" />
-            <ContactInfoItem icon={<FaFacebook />} text="webcifar@gmail.com" />
+            <ContactInfoItem icon={<MdEmail />} text="webcifar@gmail.com" />
             <ContactInfoItem text="Chittagong, Bangladesh" />
           </div>
           <div className="right">
