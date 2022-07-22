@@ -118,10 +118,16 @@ export default function Footer() {
             />
           </div>
           <div className="footer__col3">
-            <h2 className="heading">Social Icons</h2>
-            <SocialIcons text="Facebook" icon={<FaFacebook />} />
-            <SocialIcons text="Twitter" icon={<FaTwitter />} />
-            <SocialIcons text="Telegram" icon={<FaTelegram />} />
+            <h2 className="heading">Social Icons</h2>              
+            <a href="https://www.facebook.com/profile.php?id=100074182476935" target="_blank" rel="noreferrer">
+            <SocialIcons text="Facebook" icon={<FaFacebook />} /></a>
+                          
+            <a href="https://twitter.com/Adrenaline_nine?t=iUib-BHsczcxO-VzpN8Qeg&s=09" target="_blank" rel="noreferrer">
+            <SocialIcons text="Twitter" icon={<FaTwitter />} /></a>
+
+            <a href="https://t.me/Adrenaline_Nine" target="_blank" rel="noreferrer">
+            <SocialIcons text="Telegram" icon={<FaTelegram />} />       </a>
+
           </div>
         </div>
       </div>
